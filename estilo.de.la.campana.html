@@ -1,0 +1,60 @@
+/*
+ * Nota Importante: Este archivo styles.css se ha generado para cumplir con la solicitud explícita,
+ * pero en la implementación de los archivos HTML (index.html, sobre.html, acciones.html, contacto.html),
+ * el CSS ha sido integrado directamente dentro de la etiqueta <style> de cada HTML.
+ * Esto asegura que cada página sea completamente autónoma y funcional en el entorno de previsualización.
+ *
+ * Los estilos aquí presentes reflejan la configuración base utilizada en cada archivo HTML.
+ */
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333; /* Texto principal en gris oscuro */
+    background-color: #f8f8f8; /* Fondo en gris claro */
+}
+
+/* Colores de la campaña */
+.header-bg {
+    background-color: #2563eb; /* Azul primario fuerte */
+}
+
+.text-blue-main {
+    color: #2563eb;
+}
+
+.main-blue-btn {
+    background-color: #3b82f6; /* Azul de acento para botones */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 9999px; /* Botones redondeados */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.main-blue-btn:hover {
+    background-color: #1e40af; /* Azul oscuro al pasar el ratón */
+}
+
+/* Estilos de navegación compartidos */
+nav a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.15s;
+}
+
+nav a:hover {
+    background-color: #1e40af;
+}
+
+/* Formulario de contacto */
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}

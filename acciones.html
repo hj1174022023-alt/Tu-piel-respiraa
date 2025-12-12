@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acciones | Tu Piel Respira</title>
+    <!-- Tailwind CSS CDN para estilos rápidos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados integrados */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        .header-bg {
+            background-color: #2563eb; /* Azul primario */
+        }
+        .main-blue-btn {
+            background-color: #3b82f6; /* Azul más claro */
+            transition: background-color 0.3s;
+        }
+        .main-blue-btn:hover {
+            background-color: #1e40af; /* Azul oscuro al pasar el ratón */
+        }
+        .text-blue-main {
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header y Navegación (Mismo que index.html) -->
+    <header class="header-bg shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-white text-2xl font-bold">Alma Botánica</span>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Inicio</a>
+                    <a href="sobre.html" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Sobre la Campaña</a>
+                    <a href="acciones.html" class="text-white bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Acciones</a>
+                    <a href="contacto.html" class="text-white hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-center text-blue-main mb-4">Únete al Ritual de la Calma</h1>
+            <p class="text-center text-xl text-gray-600 mb-12">Hay muchas maneras de conectar con "Tu Piel Respira". ¡Encuentra la tuya!</p>
+
+            <!-- Lista de Acciones (Tarjetas con Íconos SVG) -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta 1: Talleres -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+                        <!-- Icono de Taller/Curso (Libro) -->
+                        <svg class="w-6 h-6 text-blue-main" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5c-1.5 0-3 .67-4.5 2M12 6.253C13.168 5.477 14.794 5 16.5 5c1.5 0 3 .67 4.5 2M12 18.253v-13m0 0a2.5 2.5 0 00-2.5-2.5c-1.25 0-2.5 1.25-2.5 2.5m5 0a2.5 2.5 0 012.5-2.5c1.25 0 2.5 1.25 2.5 2.5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Asiste a nuestros Talleres</h3>
+                    <p class="text-gray-600 text-center">
+                        Participa en sesiones prácticas de aromaterapia y creación de rutinas de cuidado. Aprende a formular tus propios bálsamos naturales.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2: Voluntariado -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+                        <!-- Icono de Voluntariado/Manos (Corazón) -->
+                        <svg class="w-6 h-6 text-blue-main" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Sé Voluntario Ambiental</h3>
+                    <p class="text-gray-600 text-center">
+                        Colabora en jornadas de reforestación y limpieza que apoyan la salud del planeta, fuente de nuestros ingredientes botánicos.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3: Difusión -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.02]">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full mb-4 mx-auto">
+                        <!-- Icono de Difusión/Redes (Megáfono) -->
+                        <svg class="w-6 h-6 text-blue-main" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882l-7 3.5v5.364l7 3.5 7-3.5v-5.364l-7-3.5zM15.5 12a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-3">Comparte el Mensaje</h3>
+                    <p class="text-gray-600 text-center">
+                        Ayúdanos a amplificar la voz de la campaña. Usa nuestros hashtags y comparte tu "Ritual de Calma" en tus redes sociales.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CTA Final -->
+            <div class="text-center mt-16 p-8 bg-gray-100 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4">¿Listo para ser parte de Alma Botánica?</h2>
+                <a href="contacto.html" class="inline-block mt-4 px-10 py-4 text-white font-semibold rounded-full main-blue-btn shadow-lg hover:shadow-xl text-lg">Quiero Unirme</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer (Mismo que index.html) -->
+    <footer class="header-bg text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <p class="text-sm">&copy; 2024 Campaña Alma Botánica. Todos los derechos reservados.</p>
+                <!-- Redes Sociales Ficticias -->
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-white hover:text-gray-300 transition duration-150">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- Icono de Instagram ficticio --><path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.772 1.668 4.92 4.92.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.07 4.85-6.91 1.09-3.252 4.772-4.92-4.92c-.058-1.265-.07-1.645-.07-4.85zm0 2.163c-2.31 0-4.185 1.875-4.185 4.185s1.875 4.185 4.185 4.185 4.185-1.875 4.185-4.185-1.875-4.185-4.185-4.185zM17.41 4.54a1.05 1.05 0 101.485 1.485 1.05 1.05 0 00-1.485-1.485z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 transition duration-150">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- Icono de Facebook ficticio --><path d="M14 13.5l1-1h2v-2h-2v-1c0-1.1.9-2 2-2h1v-2h-2c-2.7 0-4.9 2.2-4.9 4.9v1.1h-2v2h2v6h3v-6h2l1-1h-3z"/></svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 transition duration-150">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><!-- Icono de Twitter ficticio --><path d="M22 6.924c-.792.352-1.64.587-2.527.69a4.84 4.84 0 002.13-2.438 9.53 9.53 0 01-2.812 1.077c-.75-.8-1.785-1.3-2.955-1.3a4.956 4.956 0 00-4.95 4.95c0 .38.04.75.12 1.11a14.07 14.07 0 01-10.2-5.185 4.956 4.956 0 001.53 6.6c-.727-.023-1.41-.223-2.01-.55v.062c0 5.37 3.82 9.85 8.87 10.84-.93.25-1.91.38-2.92.38-.72 0-1.43-.07-2.11-.2a9.927 9.927 0 008.2 4.95c-5.83 4.58-13.1 7.04-21.4 7.04-.37 0-.74-.02-1.11-.06a14.08 14.08 0 0014.54-7.85c.04-.2.08-.4.12-.61 1.05-1.4 1.77-3.04 1.77-4.85 0-.17-.005-.34-.015-.51.78-.56 1.45-1.25 1.99-2.04z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
