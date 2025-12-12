@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraGlow - Suero Revitalizante</title>
+    <!-- Incluir Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-glow': '#4c51bf', // Un tono violeta/índigo
+                        'secondary-mint': '#a7f3d0', // Un tono menta suave
+                        'bg-light': '#f9fafb',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Usar Inter como fuente principal */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="font-sans bg-bg-light text-gray-800 antialiased">
+
+    <!-- Encabezado y Navegación -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-primary-glow tracking-tight">
+                    Aura<span class="text-secondary-mint">Glow</span>
+                </a>
+                <!-- Navegación (oculta en móvil, visible en escritorio) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#caracteristicas" class="text-gray-600 hover:text-primary-glow transition duration-150">Características</a>
+                    <a href="#testimonios" class="text-gray-600 hover:text-primary-glow transition duration-150">Testimonios</a>
+                    <a href="#comprar" class="text-gray-600 hover:text-primary-glow transition duration-150">Comprar</a>
+                </nav>
+                <!-- CTA para móvil/escritorio -->
+                <a href="#comprar" class="bg-primary-glow text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 transition duration-300 shadow-md transform hover:scale-105">
+                    ¡Comprar Ahora!
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="hero" class="pt-16 pb-20 sm:pt-24 sm:pb-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contenido de Texto -->
+                <div class="text-center md:text-left">
+                    <span class="inline-block bg-secondary-mint text-primary-glow text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 shadow-inner">
+                        Nuevo Lanzamiento
+                    </span>
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Revela tu <span class="text-primary-glow">luminosidad</span> natural.
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                        AuraGlow, el suero revitalizante que fusiona la ciencia avanzada con los extractos botánicos más puros para una piel visiblemente radiante y joven.
+                    </p>
+                    <a href="#comprar" class="inline-block bg-primary-glow text-white text-xl font-bold px-10 py-4 rounded-xl shadow-2xl shadow-primary-glow/50 hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                        ¡Pide el tuyo hoy!
+                    </a>
+                </div>
+
+                <!-- Imagen del Producto (Placeholder) -->
+                <div class="flex justify-center md:justify-end">
+                    <!-- Placeholder de imagen: Botella de Suero Estético -->
+                    <div class="w-64 h-80 sm:w-80 sm:h-96 bg-gray-200 rounded-3xl shadow-2xl p-4 flex flex-col items-center justify-center border-4 border-secondary-mint/50 transform rotate-3 hover:rotate-0 transition duration-500">
+                        <svg class="w-1/2 h-1/2 text-primary-glow/70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.035 2.035M18.965 5.035L21 7M10 5.035l2.035 2.035M16 5l-2 2M13 10v4m-2 0h2m0-2h2m-2-2h-2m-2 4h-2M4 15h16a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2z"></path></svg>
+                        <p class="mt-4 text-center font-semibold text-gray-700">Imagen: Botella de AuraGlow</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Características -->
+        <section id="caracteristicas" class="py-20 bg-bg-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-4">
+                    ¿Por qué elegir AuraGlow?
+                </h2>
+                <p class="text-xl text-center text-gray-600 mb-16">
+                    Los beneficios que transformarán tu rutina de cuidado de la piel.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Característica 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-glow/70">
+                        <div class="text-primary-glow mb-4">
+                            <!-- Icono de Gota de Agua (Deep Hydration) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414l2.828 2.828m-2.828-2.828L19 9.035"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11l-3 3-3-3"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Hidratación Profunda</h3>
+                        <p class="text-gray-600">
+                            Con ácido hialurónico de triple peso molecular, penetra todas las capas de la piel para una hidratación duradera.
+                        </p>
+                    </div>
+
+                    <!-- Característica 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-glow/70">
+                        <div class="text-primary-glow mb-4">
+                            <!-- Icono de Hoja (Vegan) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Fórmula Vegana y Limpia</h3>
+                        <p class="text-gray-600">
+                            100% libre de crueldad animal, parabenos, sulfatos y colorantes artificiales. Pura bondad para tu piel.
+                        </p>
+                    </div>
+
+                    <!-- Característica 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-primary-glow/70">
+                        <div class="text-primary-glow mb-4">
+                            <!-- Icono de Reloj (Anti-Aging) -->
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Efecto Anti-edad Visible</h3>
+                        <p class="text-gray-600">
+                            Reduce la apariencia de líneas finas y arrugas, promoviendo la elasticidad y firmeza con el uso continuo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios -->
+        <section id="testimonios" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                    Lo que dicen nuestros clientes
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonio 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-l-4 border-secondary-mint">
+                        <p class="text-xl text-gray-700 italic mb-4">
+                            "Nunca había usado un suero que se absorbiera tan rápido y dejara mi piel sintiéndose tan suave e hidratada. ¡Mi nuevo favorito indiscutible!"
+                        </p>
+                        <div class="font-semibold text-primary-glow">- Sofía M., Bogotá</div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-l-4 border-secondary-mint">
+                        <p class="text-xl text-gray-700 italic mb-4">
+                            "Después de dos semanas, noté una reducción en las líneas finas alrededor de mis ojos. La luminosidad que da es increíble, ¡recibo cumplidos a diario!"
+                        </p>
+                        <div class="font-semibold text-primary-glow">- Ricardo L., Ciudad de México</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Compra y CTA Final -->
+        <section id="comprar" class="py-20 bg-primary-glow">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+                <h2 class="text-4xl sm:text-5xl font-extrabold mb-6">
+                    Comienza tu viaje hacia una piel AuraGlow
+                </h2>
+                <p class="text-xl opacity-90 mb-10">
+                    Únete a miles de personas que han redescubierto su mejor piel. Oferta por tiempo limitado.
+                </p>
+                
+                <!-- Tarjeta de Producto -->
+                <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-3xl max-w-sm mx-auto transform hover:scale-105 transition duration-500">
+                    <h3 class="text-3xl font-bold text-primary-glow mb-4">Suero Revitalizante</h3>
+                    <p class="text-5xl font-extrabold mb-2">$49.99</p>
+                    <p class="text-sm line-through text-gray-500 mb-6">$65.00</p>
+                    
+                    <ul class="text-left space-y-3 mb-8 text-lg">
+                        <li class="flex items-center">
+                            <span class="text-secondary-mint mr-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            Hidratación de 24 horas
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-secondary-mint mr-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            Fórmula anti-contaminación
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-secondary-mint mr-2">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </span>
+                            Garantía de 30 días
+                        </li>
+                    </ul>
+
+                    <button class="w-full bg-secondary-mint text-primary-glow text-xl font-bold py-3 rounded-xl hover:bg-opacity-80 transition duration-300 shadow-lg shadow-secondary-mint/50">
+                        Añadir al Carrito
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="text-lg font-bold mb-2">AuraGlow</div>
+            <p class="text-sm text-gray-400">&copy; 2025 AuraGlow. Todos los derechos reservados. Producto ficticio para demostración.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-150">Política de Privacidad</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-150">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
